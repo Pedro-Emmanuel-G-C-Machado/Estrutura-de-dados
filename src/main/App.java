@@ -9,19 +9,16 @@ public class App {
         return  0;
     }
     
-      public static int maior(int[] arrayDesordenado){
+    public static int maior(int[] arrayDesordenado){
         int maximo = arrayDesordenado[0];
-    for (int index = 0; index < arrayDesordenado.length; index++) {
-        if(maximo < arrayDesordenado[index]){
-            return index ; 
+        for (int index = 0; index < arrayDesordenado.length; index++) {
+            if(maximo < arrayDesordenado[index]){
+                maximo = arrayDesordenado[index];
+            }
         }
-
-        
+        return maximo;
     }
-        
     
-          return maximo;
-      }
 
    public static Integer parMaisProximo(Integer[][] pares){
        return 1;
